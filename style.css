@@ -7,27 +7,50 @@ nav {
     padding: 10px;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
+nav .active {
+    background-color: #00d9ff;
+    
+}
+
+nav li {
     float: left;
 }
 
-li a {
+nav a {
     display: block;
     margin-right: 20px;
+    text-decoration: none;
+padding: 10px;
+font-weight: bold; 
+border-radius: 25px;
+font-size: 20px;
 }
-
-li a:hover {
+nav a:active {
+    color: rgb(0, 255, 34);
+}
+nav li a:hover {
     background-color: #3a6fff;
 }
 
 img {
     height: 200px;
     width: 350px;
+}
+
+.RM {
+margin: 10px;
+background-color: #00eeff;
+padding: 10px;
+font-size: 16px;
+border-radius: 10px;
+color: #ffffff;
+font-weight: bold;
+border: 4px solid rgb(88, 202, 255);
 }
