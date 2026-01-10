@@ -11,6 +11,11 @@
 <li><a href="project.html">Project</a></li>
             </ul>
         </nav>
+        <section id="mySlider">
+            <img class="mySliders" src="Tanjiro.jpg"></img>
+            <img class="mySliders" src="Yorichi.jpg" ></img>
+            <img class="mySliders" src="Kokoshibo.jpg" ></img>
+        </section>
 <h2>Interesting Information</h2>
 <img src="tiger.png" />
 <br />
@@ -20,6 +25,7 @@
 <br />
 <button class="RM" onclick="lion();">Read More!</button>
 <p id="lion-info"></p>
+
 <script>
     function tiger() {
         document.getElementById("tiger-info").innerHTML = "A tiger (Panthera tigris) is the largest member of the cat family, known for its powerful build, orange coat with black stripes, and solitary, apex predator nature, inhabiting Asia from the Russian Far East to Southeast Asia; it's an excellent swimmer, loves water, and faces threats like habitat loss, with the Bengal tiger being the most common, while India holds the largest population."
@@ -27,7 +33,20 @@
        function lion() {
          document.getElementById("lion-info").innerHTML = "A lion (Panthera leo) is a large, powerful cat known as the King of the Jungle, symbolizing strength, with male lions distinguished by their majestic manes. Living in social groups called prides, they are apex predators in African and Indian grasslands, hunting large prey and forming strong family units. These iconic animals face threats from habitat loss and poaching, making conservation efforts crucial. "
        }
+           var myIndex = 0;
+           carousel(); 
+           function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySliders");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 3000 );
            
+           }
 </script>
     </body>
 </html>
