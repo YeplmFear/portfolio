@@ -58,6 +58,7 @@ border: 4px solid rgb(88, 202, 255);
     height: 500px;
 }
 
+
 .pimg3 {
     position: relative;
     opacity: 0.70;
@@ -66,14 +67,14 @@ border: 4px solid rgb(88, 202, 255);
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    background-image: url("tanjiro_kamado_hd_demon_slayer_kimetsu_no_yaiba_2.jpg");
+    background-image: url("zenitsu-agatsuma-2880x1800-19143.jpg");
     min-height: 400px;
 
 }
 
 .section {
     text-align: center;
-    padding: 50px 80px;
+    padding: 67px 67px;
 }
 
 .section-dark {
@@ -83,7 +84,7 @@ border: 4px solid rgb(88, 202, 255);
 
 .ptext {
     position: absolute;
-    top: 50%;
+    top: 67%;
     width: 100%;
     text-align: center;
     color: #000;
@@ -95,15 +96,15 @@ border: 4px solid rgb(88, 202, 255);
 .ptext .border {
     background-color: #111;
     color: #fff;
-    padding: 20px;
+    padding: 50px;
 }
 
 .ptext .border.trans {
     background-color: transparent;
 }
 
-@media(max-width:568px){
+@media(max-width:1000px) {
     .pimg3 {
         background-attachment: scroll;
     }
-}   
+}
