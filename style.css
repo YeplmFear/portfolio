@@ -108,3 +108,19 @@ border: 4px solid rgb(88, 202, 255);
         background-attachment: scroll;
     }
 }
+#mySlider {
+    margin: 0 auto;
+    width: fit-content;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footer_top {
+    height: 50px;
+}
